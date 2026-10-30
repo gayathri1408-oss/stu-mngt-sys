@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student Registration</title>
+</head>
+<body>
+    <h2>Student Registration</h2>
+
+    <form>
+        Name: <input type="text" id="name"><br><br>
+        Roll No: <input type="text" id="roll"><br><br>
+        Department: <input type="text" id="dept"><br><br>
+
+        <button type="button" onclick="register()">Register</button>
+    </form>
+
+    <p id="result"></p>
+
+    <script>
+        function register() {
+            let name = document.getElementById("name").value;
+            let roll = document.getElementById("roll").value;
+            let dept = document.getElementById("dept").value;
+
+            document.getElementById("result").innerHTML =
+                "Registration Successful: " + name +
+                " (" + roll + ") - " + dept;
+        }
+    </script>
+</body>
+</html>

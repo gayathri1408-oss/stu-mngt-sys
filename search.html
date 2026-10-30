@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student Search</title>
+</head>
+<body>
+    <h2>Student Search</h2>
+
+    <input type="text" id="roll" placeholder="Enter Roll Number">
+
+    <button onclick="search()">Search</button>
+
+    <p id="result"></p>
+
+    <script>
+        function search() {
+            let roll = document.getElementById("roll").value;
+
+            if (roll == "101") {
+                document.getElementById("result").innerHTML =
+                    "Student Found: Gayathri";
+            } else {
+                document.getElementById("result").innerHTML =
+                    "Student Not Found";
+            }
+        }
+    </script>
+</body>
+</html>
